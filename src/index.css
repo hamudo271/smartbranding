@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css");
+
+:root {
+  --font-pretendard: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+body {
+  font-family: var(--font-pretendard);
+  @apply bg-white text-gray-900 dark:bg-black dark:text-white antialiased transition-colors duration-300;
+}
+
+.container-custom {
+  @apply max-w-screen-xl mx-auto px-4 md:px-8;
+}
+
+/* Custom Utilities for Premium Feel */
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400;
+}
+
+.section-padding {
+  @apply py-20 md:py-32;
+}
+
+.glass-effect {
+  @apply bg-white/5 backdrop-blur-lg border border-white/10;
+}

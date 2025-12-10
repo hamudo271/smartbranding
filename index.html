@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="스마트 브랜딩 | 의료·헬스케어 병원 브랜딩/마케팅 전문 에이전시" />
+    <meta name="keywords" content="스마트브랜딩, 병원마케팅, 의료브랜딩, 콘텐츠마케팅, 상위노출" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="스마트 브랜딩" />
+    <meta property="og:description" content="성과로 증명하는 의료 브랜딩 파트너, 스마트 브랜딩" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+    <title>스마트 브랜딩</title>
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <script>
+      // 초기 렌더 전에 테마를 설정해 FOUC를 방지
+      (() => {
+        try {
+          const storageTheme = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          const theme = storageTheme || (prefersDark ? 'dark' : 'light');
+          const root = document.documentElement;
+          root.dataset.theme = theme;
+          root.classList.add(theme);
+        } catch (error) {
+          document.documentElement.classList.add('dark');
+          document.documentElement.dataset.theme = 'dark';
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
